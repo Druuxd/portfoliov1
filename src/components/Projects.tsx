@@ -5,6 +5,7 @@ const projects = [
     name: 'Shockwave',
     description: 'Browser-based PCB viewer. Load a board file, inspect it without leaving the browser.',
     status: 'Ongoing. Thesis project',
+    statusColor: 'text-amber-400',
     stack: ['React', 'Canvas'],
     href: 'https://github.com/Druuxd/Shockwave',
   },
@@ -12,6 +13,7 @@ const projects = [
     name: 'Lurk',
     description: 'Discord bot. Ask about an anime, get back data pulled from MAL.',
     status: 'Done',
+    statusColor: 'text-emerald-400',
     stack: ['Python', 'MAL API'],
     href: 'https://github.com/Druuxd/Discord-Bot',
   },
@@ -19,6 +21,7 @@ const projects = [
     name: 'ZeroPassword',
     description: 'Password manager built in Java with a MongoDB backend.',
     status: 'Class project, shelved',
+    statusColor: 'text-red-400/70',
     stack: ['Java', 'MongoDB'],
     href: 'https://github.com/Druuxd/ZeroPassword',
   },
@@ -55,10 +58,10 @@ export default function Projects() {
           >
             <h3 className="text-xl font-semibold text-white">{project.name}</h3>
             <p className="text-zinc-400 text-sm">{project.description}</p>
-            <p className="text-zinc-600 text-xs">{project.status}</p>
+            <p className={`text-xs ${project.statusColor}`}>{project.status}</p>
             <div className="flex flex-wrap gap-2 mt-auto">
               {project.stack.map((tag) => (
-                <span key={tag} className="px-2 py-1 text-xs bg-zinc-800 text-zinc-300 rounded">
+                <span key={tag} className="px-2 py-1 text-xs bg-zinc-800 text-zinc-100 rounded">
                   {tag}
                 </span>
               ))}

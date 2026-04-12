@@ -26,8 +26,8 @@
 }
 
 html {
-  background-color: #09090b;
-  background-image: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+  background-color: #1a1a1d;
+  background-image: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, transparent 70%);
   min-height: 100vh;
   color: #fafafa;
   -webkit-font-smoothing: antialiased;
